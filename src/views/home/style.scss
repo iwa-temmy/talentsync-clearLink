@@ -1,0 +1,34 @@
+.home {
+  @apply relative w-full;
+}
+.hero {
+  @apply w-full pt-[200px] bg-[url(/hero-bg.png)] bg-cover bg-right-top h-screen flex flex-row items-center;
+
+  .hero-text {
+    @apply flex flex-col gap-4 w-[55%];
+    #header {
+      @apply text-gray-800 font-semibold text-[58px] tracking-[-1.28px] leading-[72px] -mt-24;
+    }
+    #sub-header {
+      @apply text-base;
+    }
+    .hero-buttons {
+      @apply flex flex-row items-center  gap-5 text-sm;
+      #free-trial {
+        @apply bg-blue-700 text-white py-2 px-6 rounded-[100px];
+      }
+      #discover-ai {
+        @apply flex flex-row gap-3 text-blue-700;
+      }
+    }
+    .reviews-and-ratings {
+      @apply flex flex-row gap-4;
+    }
+  }
+  .hero-img {
+    @apply w-[45%] h-full;
+    img {
+      @apply h-[500px] w-full object-contain;
+    }
+  }
+}

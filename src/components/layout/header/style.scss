@@ -1,0 +1,24 @@
+.header {
+  @apply absolute z-10 top-0 left-0  mt-8 w-full;
+  .nav {
+    @apply flex flex-row justify-between items-center border border-solid border-gray-300 bg-gray-100 py-2 text-base font-semibold px-6 rounded-[100px];
+    .center-nav {
+      @apply flex text-sm flex-row gap-10;
+      li {
+        @apply flex flex-row gap-1 items-center  text-gray-500;
+      }
+    }
+    .cta-buttons {
+      @apply flex flex-row gap-2;
+      button {
+        @apply px-6 text-xs py-[14px] rounded-[100px];
+      }
+      #talk-to-sales {
+        @apply bg-white text-gray-900 border border-solid border-gray-400;
+      }
+      #sign-up {
+        @apply text-white bg-blue-700;
+      }
+    }
+  }
+}
