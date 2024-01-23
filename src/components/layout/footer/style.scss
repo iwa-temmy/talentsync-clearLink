@@ -1,0 +1,13 @@
+.footer {
+  @apply flex flex-row gap-20;
+
+  .footer-description {
+    @apply w-[30%];
+  }
+  .footer-link-groups {
+    @apply flex flex-row flex-1 w-[70%];
+    .footer-link-group {
+      @apply w-full;
+    }
+  }
+}

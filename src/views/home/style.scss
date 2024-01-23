@@ -32,3 +32,16 @@
     }
   }
 }
+
+.join {
+  @apply w-full my-14;
+  .subheader {
+    @apply text-center;
+  }
+  .brands {
+    @apply flex flex-row justify-center items-center w-full gap-[64px] mt-12;
+    img {
+      @apply w-[140px] h-[35px];
+    }
+  }
+}
