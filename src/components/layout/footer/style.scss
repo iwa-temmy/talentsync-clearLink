@@ -1,13 +1,53 @@
 .footer {
-  @apply flex flex-row gap-20;
+  @apply flex flex-row gap-20 mt-16 mb-10;
 
-  .footer-description {
-    @apply w-[30%];
-  }
-  .footer-link-groups {
-    @apply flex flex-row flex-1 w-[70%];
-    .footer-link-group {
-      @apply w-full;
+  .footer-main {
+    @apply w-[28%];
+
+    #description {
+      @apply text-base mt-7 text-gray-600 font-normal;
     }
   }
+
+  .footer-link-groups {
+    @apply flex flex-row flex-1 w-[72%];
+
+    .footer-link-group {
+      @apply w-full;
+
+      .title {
+        @apply text-[13px] text-gray-500 font-semibold;
+
+      }
+
+      .get-app {
+        @apply text-blue-700;
+      }
+
+      .links {
+        li {
+          @apply text-sm font-semibold my-4 text-gray-600 w-full;
+
+          img {
+            @apply w-full -mt-2;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+.footer-extension {
+  @apply bg-gray-50;
+
+  .content {
+    @apply flex flex-row justify-between py-5;
+
+    .socials {
+      @apply flex flex-row gap-3;
+    }
+  }
+
 }

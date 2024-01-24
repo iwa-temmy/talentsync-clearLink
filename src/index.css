@@ -9,9 +9,17 @@ body {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .section {
   @apply px-[85px];
 }
+
 .logo {
   @apply w-[152.3px] h-[26px];
+  object-fit: cover;
+  ;
 }

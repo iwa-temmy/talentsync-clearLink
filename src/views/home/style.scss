@@ -22,7 +22,7 @@
       }
     }
     .reviews-and-ratings {
-      @apply flex flex-row gap-4;
+      @apply flex flex-row gap-4 mt-2;
     }
   }
   .hero-img {
@@ -39,7 +39,7 @@
     @apply text-center;
   }
   .brands {
-    @apply flex flex-row justify-center items-center w-full gap-[64px] mt-12;
+    @apply flex flex-row justify-around items-center w-full mt-12;
     img {
       @apply w-[140px] h-[35px];
     }

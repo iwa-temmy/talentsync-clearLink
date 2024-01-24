@@ -5,10 +5,12 @@ export default {
     extend: {
       colors: {
         "blue-700": "#175CD3",
+        "gray-50": "#F9FAFB",
         "gray-100": "#F2F4F7",
         "gray-300": "#D0D5DD",
         "gray-400": "#98A2B3",
         "gray-500": "#667085",
+        "gray-600": "#475467",
         "gray-700": "#344054",
         "gray-800": "#1D2939",
         "gray-900": "#1D2939",
