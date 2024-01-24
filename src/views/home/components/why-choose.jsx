@@ -2,24 +2,27 @@ import { features } from "../../../data";
 
 const WhyChoose = () => {
   return (
-    <section className="section">
-      <h5>The ClearLink Advantage</h5>
-      <h2>Why choose ClearLink?</h2>
-      <p>
-        In a world where connection is everything, ClearLink takes the lead. Our
+    <section className="section why-choose">
+      <h5 className="why-choose-intro">The ClearLink Advantage</h5>
+      <h2 className="why-choose-header">Why choose ClearLink?</h2>
+      <p className="why-choose-description">
+        In a world where connection is everything, ClearLink takes the lead. Our{" "}
+        <br />
         cutting-edge video conferencing app offers:
       </p>
-      <div>
-        <div className="features">
+      <div className="features">
+        <div className="features-group">
           {features.map((feature, index) => (
             <div className="feature" key={index}>
-              <img src={feature.icon} alt={feature.title} />
-              <h4>{feature.title}</h4>
-              <p>{feature.description}</p>
+              <div className="icon">
+                <img src={feature.icon} alt={feature.title} />
+              </div>
+              <h4 className="feature-title">{feature.title}</h4>
+              <p className="feature-description">{feature.description}</p>
             </div>
           ))}
         </div>
-        <div>
+        <div className="features-img">
           <img src="/feature.png" alt="feature-img" />
         </div>
       </div>

@@ -122,3 +122,44 @@
     @apply w-1/2;
   }
 }
+
+.why-choose {
+  @apply py-24;
+  .why-choose-intro {
+    @apply text-blue-700 text-[13px] font-semibold;
+  }
+  .why-choose-header {
+    @apply text-[40px] font-semibold text-gray-800 tracking-[-0.96px] mt-1 mb-3;
+  }
+  .why-choose-description {
+    @apply w-[50%] text-gray-500;
+  }
+  .features {
+    @apply flex flex-row justify-between mt-14;
+    .features-group {
+      @apply grid grid-cols-2 gap-10 w-[45%];
+      .feature {
+        @apply w-full;
+        .icon {
+          @apply flex items-center justify-center h-[45px] w-[45px] bg-gray-50 rounded-full border border-solid border-gray-200 mb-4;
+          img {
+            @apply w-[16px] w-[16px];
+          }
+        }
+        .feature-title {
+          @apply text-base font-semibold;
+        }
+        .feature-description {
+          @apply text-sm text-gray-600 font-normal leading-[24px];
+        }
+      }
+    }
+    .features-img {
+      @apply w-[50%];
+
+      img {
+        @apply w-full h-full h-[450px] object-contain;
+      }
+    }
+  }
+}
