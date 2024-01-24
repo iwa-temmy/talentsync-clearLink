@@ -8,6 +8,7 @@ export default {
         "blue-700": "#175CD3",
         "gray-50": "#F9FAFB",
         "gray-100": "#F2F4F7",
+        "gray-200": "#EAECF0",
         "gray-300": "#D0D5DD",
         "gray-400": "#98A2B3",
         "gray-500": "#667085",

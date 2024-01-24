@@ -158,7 +158,7 @@
       @apply w-[50%] relative;
 
       .arrow-img {
-        @apply absolute -top-[160px] w-[30%] right-[289px];
+        @apply absolute -top-[32%] w-[31%] right-[43%];
         img {
           @apply w-full h-[unset];
         }
@@ -166,6 +166,52 @@
 
       img {
         @apply w-full h-full h-[450px] object-contain;
+      }
+    }
+  }
+}
+
+.faq {
+  @apply py-24 flex flex-row justify-between;
+  .faq-info {
+    @apply w-[28%];
+    .faq-intro {
+      @apply text-blue-700 text-[13px] font-semibold;
+    }
+    .faq-header {
+      @apply text-[40px] font-semibold text-gray-800 tracking-[-0.96px] mt-1 mb-3;
+    }
+    .faq-description {
+      @apply text-gray-500;
+
+      span {
+        @apply border-0 border-solid border-b border-gray-500;
+      }
+    }
+  }
+  .faqs {
+    @apply w-[57%];
+    .faq-item {
+      @apply py-5 border-0 border-solid border-b border-gray-200 p-4;
+
+      &:last-of-type {
+        @apply border-b-0;
+      }
+    }
+    .faq-item-title {
+      @apply flex flex-row justify-between text-base font-semibold;
+      svg {
+        @apply text-gray-400;
+      }
+    }
+    .faq-item-content {
+      @apply text-[13px] text-gray-600 font-normal;
+    }
+    .is-open {
+      @apply bg-gray-50  border border-solid border-gray-200 p-6 rounded-2xl;
+
+      .faq-item-title {
+        @apply pb-2;
       }
     }
   }
