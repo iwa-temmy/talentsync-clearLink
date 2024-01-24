@@ -155,7 +155,14 @@
       }
     }
     .features-img {
-      @apply w-[50%];
+      @apply w-[50%] relative;
+
+      .arrow-img {
+        @apply absolute -top-[160px] w-[30%] right-[289px];
+        img {
+          @apply w-full h-[unset];
+        }
+      }
 
       img {
         @apply w-full h-full h-[450px] object-contain;

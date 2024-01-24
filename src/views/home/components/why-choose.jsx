@@ -23,6 +23,9 @@ const WhyChoose = () => {
           ))}
         </div>
         <div className="features-img">
+          <div className="arrow-img">
+            <img src="/arrow.svg" alt="arrow" />
+          </div>
           <img src="/feature.png" alt="feature-img" />
         </div>
       </div>
