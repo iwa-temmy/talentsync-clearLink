@@ -1,7 +1,7 @@
 import Rating from "./rating";
 const Hero = () => {
   return (
-    <div className="section hero">
+    <section className="section hero">
       <div className="hero-text">
         <h1 id="header">
           Uniting the world, <br /> one video call at a time
@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="reviews-and-ratings">
           <img src="/avatar-group.png" alt="avatar-group" />
           <div>
-            <Rating />
+            <Rating showDetails />
             <p>from 3,000+ reviews</p>
           </div>
         </div>
@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="hero-img">
         <img src="/hero.png" alt="hero section image" />
       </div>
-    </div>
+    </section>
   );
 };
 

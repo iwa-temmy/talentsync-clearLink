@@ -1,8 +1,11 @@
 import Footer from "../../components/layout/footer";
 import FooterExtension from "../../components/layout/footer/footer-entension";
 import Header from "../../components/layout/header";
+import ClientFeedback from "./components/client-feedback";
+import Contact from "./components/contact";
 import Hero from "./components/hero";
 import Join from "./components/join";
+import WhyChoose from "./components/why-choose";
 import "./style.scss";
 
 const Home = () => {
@@ -11,6 +14,9 @@ const Home = () => {
       <Header />
       <Hero />
       <Join />
+      <WhyChoose />
+      <ClientFeedback />
+      <Contact />
       <Footer />
       <FooterExtension />
     </div>

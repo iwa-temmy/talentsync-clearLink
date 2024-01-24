@@ -21,5 +21,11 @@ body {
 .logo {
   @apply w-[152.3px] h-[26px];
   object-fit: cover;
-  ;
+}
+
+.primary-btn {
+  @apply bg-blue-700 text-white;
+}
+.outlined-btn {
+  @apply text-gray-900 border border-solid border-gray-400;
 }

@@ -17,7 +17,6 @@
 
       .title {
         @apply text-[13px] text-gray-500 font-semibold;
-
       }
 
       .get-app {
@@ -32,11 +31,9 @@
             @apply w-full -mt-2;
           }
         }
-
       }
     }
   }
-
 }
 
 .footer-extension {
@@ -45,9 +42,15 @@
   .content {
     @apply flex flex-row justify-between py-5;
 
+    .copyright {
+      @apply text-sm text-gray-500 font-normal;
+    }
+
     .socials {
       @apply flex flex-row gap-3;
+      svg {
+        @apply text-[20px] text-gray-400;
+      }
     }
   }
-
 }

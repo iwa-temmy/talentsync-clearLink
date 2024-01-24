@@ -45,3 +45,80 @@
     }
   }
 }
+
+.contact {
+  @apply flex flex-row w-full justify-between pl-[85px] items-start flex-1 pt-12;
+  .contact-text {
+    @apply w-1/2 mt-6;
+    .contact-header {
+      @apply text-[40px] tracking-[-0.96px] leading-[50px] font-semibold text-gray-900;
+    }
+    .trial-options {
+      @apply mt-6;
+      li {
+        @apply flex flex-row items-center gap-3 text-base font-normal my-4 text-gray-600;
+        svg {
+          @apply text-[20px] text-blue-700;
+        }
+      }
+    }
+    .cta-buttons {
+      @apply flex flex-row gap-2 mt-6;
+
+      button {
+        @apply text-[13px] font-semibold rounded-[100px] py-2 px-6;
+      }
+    }
+  }
+  .contact-image {
+    @apply w-[70%];
+    img {
+      @apply w-full p-0;
+    }
+  }
+}
+
+.feedback {
+  @apply flex flex-row justify-between px-[85px] bg-gray-50 pt-20 pb-10;
+
+  .client-info {
+    @apply w-[40%];
+    .client-logo {
+      @apply h-[28px];
+    }
+    .rating {
+      @apply my-10;
+    }
+    .client-feedback {
+      @apply text-[38px] font-medium text-gray-900 tracking-[-0.88px];
+    }
+    .client-details {
+      @apply flex flex-row my-10;
+
+      .client-profile {
+        @apply flex flex-row items-center gap-2 w-[75%];
+
+        img {
+          @apply h-[45px];
+        }
+        .client-name {
+          @apply text-[17px] text-gray-900 font-semibold;
+        }
+        .client-position {
+          @apply text-sm font-normal text-gray-600;
+        }
+      }
+      .action-btn {
+        @apply flex flex-row justify-between w-[25%];
+
+        button {
+          @apply flex flex-row items-center justify-center rounded-full border border-solid border-blue-100 w-[48px] w-[48px] text-blue-700;
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+  }
+  .feedback-img {
+    @apply w-1/2;
+  }
+}
