@@ -1,16 +1,14 @@
 import { useState } from "react";
-import { FiMinusCircle } from "react-icons/fi";
+import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 import { faqs } from "../../../data";
 
 const Faq = () => {
   const [faqOpen, setFaqOpen] = useState(0);
 
-  const openFaq = (index) => {
-    setFaqOpen(index);
+  const toggleAccordion = (index) => {
+    setFaqOpen((cur) => (cur === index ? null : index));
   };
-  const closeFaq = () => {
-    setFaqOpen(null);
-  };
+
   return (
     <section className="section faq">
       <div className="faq-info">
@@ -29,7 +27,13 @@ const Faq = () => {
             key={index}
           >
             <div className="faq-item-title">
-              {faq.title} <FiMinusCircle />
+              {faq.title}
+              <button
+                onClick={() => toggleAccordion(index)}
+                disabled={index > 0}
+              >
+                {index === faqOpen ? <FiMinusCircle /> : <FiPlusCircle />}
+              </button>
             </div>
             {index === faqOpen ? (
               <div className="faq-item-content">{faq.content}</div>
